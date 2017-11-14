@@ -1,50 +1,22 @@
 {
-  "_from": "git+https://github.com/vespex/vui.git",
-  "_id": "vui@1.0.0",
-  "_inBundle": false,
-  "_integrity": "sha1-Pvyl85QLfZ4TAYuKBWGN65buL8w=",
-  "_location": "/vui",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "git",
-    "raw": "vui@git+https://github.com/vespex/vui.git",
-    "name": "vui",
-    "escapedName": "vui",
-    "rawSpec": "git+https://github.com/vespex/vui.git",
-    "saveSpec": "git+https://github.com/vespex/vui.git",
-    "fetchSpec": "https://github.com/vespex/vui.git",
-    "gitCommittish": "master"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "git+https://github.com/vespex/vui.git#fd8e6a68b8fa9a57b4bbafbe547fd50268b74c31",
-  "_spec": "vui@git+https://github.com/vespex/vui.git",
-  "_where": "/Users/Apple/bixin/bixin_group2.0",
-  "author": {
-    "name": "Vesper"
-  },
-  "bugs": {
-    "url": "https://github.com/vespex/vui/issues"
-  },
-  "bundleDependencies": false,
-  "dependencies": {},
-  "deprecated": false,
-  "description": "ypp ui",
-  "homepage": "https://github.com/vespex/vui#readme",
-  "keywords": [
-    "ui"
-  ],
-  "license": "ISC",
+  "name": "vui-c",
+  "version": "1.0.0",
+  "description": "```javascript   npm i -S git+https://github.com/vespex/vui.git   import vui from 'vui'   Vue.use(vui) ```",
   "main": "index.js",
-  "name": "vui",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vespex/vui.git"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.0.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hasky0911/vui-c.git"
+  },
+  "keywords": [
+    "vui"
+  ],
+  "author": "Hasky <haskyoko@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hasky0911/vui-c/issues"
+  },
+  "homepage": "https://github.com/Hasky0911/vui-c#readme"
 }
