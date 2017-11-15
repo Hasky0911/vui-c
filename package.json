@@ -1,7 +1,7 @@
 {
   "name": "vui-c",
-  "version": "1.0.0",
-  "description": "```javascript   npm i -S git+https://github.com/vespex/vui.git   import vui from 'vui'   Vue.use(vui) ```",
+  "version": "2.0.0",
+  "description": "```javascript   npm i -S git+https://github.com/Hasky0911/vui-c.git   import vuc from 'vui-c'   Vue.use(vuc) ```",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
