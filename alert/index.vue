@@ -94,6 +94,8 @@ export default {
 }
 .alert .text p {
   min-height: .4rem;
+  width: 80%;
+  margin: 0 auto;
 }
 .alert .text p.explain {
   color:#9B9B9B;

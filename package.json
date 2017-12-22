@@ -1,6 +1,6 @@
 {
   "name": "hasky",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "```javascript   npm i -S git+https://github.com/Hasky0911/vui-c.git   import vuc from 'vui-c'   Vue.use(vuc) ```",
   "main": "index.js",
   "scripts": {
