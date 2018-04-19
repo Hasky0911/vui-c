@@ -30,12 +30,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .loader-blk {
-  position: fixed;
+/*   position: fixed;
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,.5);
   top:0;
-  left:0;
+  left:0; */
 }
 .loader-blk .loader-bd {
   width: 3rem;
@@ -44,7 +44,7 @@ export default {
   left:50%;
   top:50%;
   transform: translate(-50%, -50%);
-  background: #fff;
+  /* background: #fff; */
   text-align: center;
   color:#333;
   border-radius: .06rem;
