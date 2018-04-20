@@ -1,19 +1,21 @@
 <template>
   <div class="alert-blk">
     <div class="shadow" v-show="isShow"></div>
-    <div class="alert" v-show="isShow">
-      <span class="close-icon" v-if="hasClose" @click="close"></span>
-      <div class="icon-blk" v-if="icon">
-        <img v-if="icon === 2" src="./icon/icon-alert-2.png" alt="">
+    <transition-group name="fade">
+      <div class="alert" v-show="isShow" key="item">
+        <span class="close-icon" v-if="hasClose" @click="close"></span>
+        <div class="icon-blk" v-if="icon">
+          <img v-if="icon === 2" src="./icon/icon-alert-2.png" alt="">
+        </div>
+        <!-- <h5 v-show="title">{{title}}</h5> -->
+        <div class="text">
+          <p v-for="item in text">{{item}}</p>
+          <!-- <p class="explain" v-for="item in explain">{{item}}</p> -->
+        </div>
+        <a href="javascript:;" class="alert-btn1" @click="cancel">{{btn1}}</a>
+        <a href="javascript:;" class="alert-btn2" @click="confirm">{{btn2}}</a>
       </div>
-      <!-- <h5 v-show="title">{{title}}</h5> -->
-      <div class="text">
-        <p v-for="item in text">{{item}}</p>
-        <!-- <p class="explain" v-for="item in explain">{{item}}</p> -->
-      </div>
-      <a href="javascript:;" class="alert-btn1" @click="cancel">{{btn1}}</a>
-      <a href="javascript:;" class="alert-btn2" @click="confirm">{{btn2}}</a>
-    </div>
+    </transition-group>
   </div>
 </template>
 
@@ -56,9 +58,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: all .3s ease;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(-.8rem);
+}
 .alert {
-  position: fixed;
-  top:50%;
+  position: absolute;
+  top: 50%;
   left:50%;
   background: #fff;
   z-index: 100;
@@ -66,8 +75,10 @@ export default {
   width: 6rem;
   border-radius: .125rem;
   padding: .4rem 0;
-  transform: translate(-50%, -50%);
-  color:#2f2f2f;
+  /* transform: translate(-50%, -50%); */
+  margin-left: -3rem;
+  margin-top: -1.27rem;
+  color: #2f2f2f;
 }
 .alert .close-icon {
   position: absolute;
@@ -130,6 +141,6 @@ export default {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, .38);
 }
 </style>
