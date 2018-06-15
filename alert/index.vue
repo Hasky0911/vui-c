@@ -1,6 +1,6 @@
 <template>
   <div class="alert-blk">
-    <div class="shadow" v-show="isShow"></div>
+    <div class="shadow" v-show="isShow" @click="cancel"></div>
     <transition-group name="fade">
       <div class="alert" v-show="isShow" key="item">
         <span class="close-icon" v-if="hasClose" @click="close"></span>
