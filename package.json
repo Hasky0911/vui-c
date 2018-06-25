@@ -1,6 +1,6 @@
 {
   "name": "vui-c",
-  "version": "4.0.4",
+  "version": "4.0.5",
   "description": "```javascript   npm i -S git+https://github.com/Hasky0911/vui-c.git   import vuc from 'vui-c'   Vue.use(vuc) ```",
   "main": "index.js",
   "scripts": {
