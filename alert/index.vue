@@ -66,7 +66,7 @@ export default {
   transform: translateY(-.8rem);
 }
 .alert {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left:50%;
   background: #fff;
